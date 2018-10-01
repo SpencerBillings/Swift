@@ -1,14 +1,18 @@
 //: Playground - noun: a place where people can play
+// visibility func name (   ) -> return type
+// All data members and variables must be initialized or the project will not compile
+// Java = this. | Swift = self.
+// Java = super is before this | Swift = super is after initialization
 
 import UIKit
 
-let newString = "Hallo Weld!"
-let secondString = "Hast du etwas zeit für mich?"
-print(newString + " " + secondString)
-
-let battleEntrance: [String] = [" joins the fight!", " enters the battle!"]
-let randomEnterance = battleEntrance.randomElement()
-let names = ["Mario", "Zero Suit Samus", "Kirby", "Mega Man", "Solid Snake"]
-for name in names {
-    print(names + battleEntrance.randomElement())
+    class Shape
+{
+        var numberOfSides = 0
+        func simpleDescription() -> String
+        {
+            return "A shape with \(numberOfSides) sides."
+        }
+        
+        print(simpleDescription)
 }
